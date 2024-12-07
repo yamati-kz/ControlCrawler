@@ -11,16 +11,19 @@
 ### 2.2 システムの概要
 本システムは以下の要素で構成される。
 
-#### 2.2.1 ハードウェア
-| ハードウェア                                 | 詳細                                       |
-|---------------------------------------------|------------------------------------------|
-| **Nvidia Jetson Orin Nano Developer Kit**    | 高性能なAI・ロボティクス向け開発ボード      |
-| **Seeed Studio XIAO ESP32C6**                | ESP32C6チップを搭載した小型マイコン        |
-| **Seeed Studio XIAO ESP32C2**                | ESP32C2チップを搭載した小型マイコン        |
-| **Dealsense DCモータ**                       | 直流モータ（用途に応じたモータ選定）        |
-| **HC-SR04超音波センサ**                      | 距離計測用の超音波センサ                    |
-| **ユニバーサル基板**                         | モータドライバIC、DCモータ、超音波センサ、制御マイコンを搭載した基板 |
-| **安定化電源（Matsusada Precision製、12V出力）** | 12V出力の安定化電源                        |
+#### 2.2.1 ハードウェア platform/framework
+| Hardware                                | OS                  | ROS 2               | build                    |
+|-----------------------------------------|---------------------|---------------------|--------------------------| 
+| Nvidia Jetson Orin Nano Developer Kit    | Ubuntu22.04.05LTS     | ROS 2 Humble        | cmake etc.               |
+| Seeed Studio XIAO ESP32C6                | Ubuntu22.04.05LTS     | mros2-esp32 (ROS 2 Humble) | ESP-IDF (Espressif IoT Development Framework)  |
+| Seeed Studio XIAO ESP32C2                | Ubuntu22.04.05LTS     | mros2-esp32 (ROS 2 Humble) | ESP-IDF (Espressif IoT Development Framework) |
+
+
+
+| Dealsense DCモータ**                       | 直流モータ（用途に応じたモータ選定）        |
+| HC-SR04超音波センサ**                      | 距離計測用の超音波センサ                    |
+| ユニバーサル基板**                         | モータドライバIC、DCモータ、超音波センサ、制御マイコンを搭載した基板 |
+| 安定化電源（Matsusada Precision製、12V出力）** | 12V出力の安定化電源                        |
 
 
 #### 2.2.2 ソフトウェア
