@@ -12,11 +12,12 @@
 本システムは以下の要素で構成される。
 
 #### 2.2.1 ハードウェア platform/framework
-| Hardware                                | OS                  | ROS 2               | build                    |
+|Tabele 2.2.1 hardware                   |                                |                    |                         |
 |-----------------------------------------|---------------------|---------------------|--------------------------| 
-| Nvidia Jetson Orin Nano Developer Kit    | Ubuntu22.04.05LTS     | ROS 2 Humble        | cmake etc.               |
-| Seeed Studio XIAO ESP32C6                | Ubuntu22.04.05LTS     | mros2-esp32 (ROS 2 Humble) | ESP-IDF (Espressif IoT Development Framework)  |
-| Seeed Studio XIAO ESP32C2                | Ubuntu22.04.05LTS     | mros2-esp32 (ROS 2 Humble) | ESP-IDF (Espressif IoT Development Framework) |
+| Hardware                                | Applications                  | ROS 2               | build                    |
+| Nvidia Jetson Orin Nano Developer Kit    |      |        |              |
+| Seeed Studio XIAO ESP32C6                |      |    |
+| Seeed Studio XIAO ESP32C2                |     |  |  |
 
 
 
