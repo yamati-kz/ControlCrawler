@@ -15,7 +15,7 @@
 |Tabele 2.2.1 hardware                   |                                |                    |                         |
 |-----------------------------------------|---------------------|---------------------|--------------------------| 
 | Hardware                                | Specification                  | ROS 2               | build                    |
-| [Nvidia Jetson Orin Nano Developer Kit](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetson-orin/)    |      |        |              |
+| [Nvidia Jetson Orin Nano Developer Kit](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetson-orin/) | Arm® Cortex®-A78AE v8.2 64-bit |        |              |
 | [Seeed Studio XIAO ESP32C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html) | RISC-V Dual-core 32-bit |    |
 | [Seeed Studio XIAO ESP32C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)|RISC-V single-core 32-bit     |  |  |
 
