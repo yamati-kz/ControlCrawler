@@ -1,30 +1,34 @@
 # ロボット制御用ソフトウェア 要件定義書
 
 ## 1. 文書の目的
-本書は、ロボット制御用ソフトウェアの開発に必要な要件を定義し、関係者間で共通の理解を形成することを目的とする。本プロジェクトでは、ROS 2およびmros 2-esp32を使用し、ロボットの原理試作を実施することを予定している。
+本書は、ロボット制御用ソフトウェアの開発に必要な要件を定義し、関係者間で共通の理解を形成することを目的とする。本プロジェクトでは、ROS 2およびmros 2-esp32を使用し、ロボットの原理試作を実施する。。
 
 ## 2. システム概要
 
 ### 2.1 背景
-本試作を通じて、ROS 2およびESP32による分散制御環境を構築し、センサー入力およびモータ制御に関する基本的な機能を実現することを目指している。
+本試作を通じて、ROS 2およびESP32による分散制御環境を構築し、センサー入力およびモータ制御に関する基本的な機能を実現することを目指す。
 
 ### 2.2 システムの概要
 本システムは以下の要素で構成される。
 
 #### 2.2.1 ハードウェア platform/framework
-|Tabele 2.2.1 hardware                   |                                |                    |                         |
+
+- Lenovo Note PC ( Intel Core i5-8250U )
+- [Nvidia Jetson Orin Nano Developer Kit](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetson-orin/) (Arm® Cortex®-A78AE v8.2 6 core 64-bit)
+- [Seeed Studio XIAO ESP32C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html) ( RISC-V dual-core 32-bit )
+- [Seeed Studio XIAO ESP32C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) ( RISC-V single-core 32-bit )
+- [DualSense wireless controller](https://www.playstation.com/ja-jp/accessories/dualsense-wireless-controller/) ( for PlayStation 5 )
+- DC Motor ( Specifications unknown / Installed in the gearbox ) 
+- [Ultrasonic Distance Sensor : HC-SR04](https://akizukidenshi.com/catalog/g/g111009) ( Measurement distance[cm] 4 - 450 )
+- [Matsusada Precision : PK-80]() ( Power Supply : DC12[V] / 5[A] )
+
+評価用基板の部品等々
+|Tabele 2.2.1.2 Electronic Components                   |                                |                    |                         |
 |-----------------------------------------|---------------------|---------------------|--------------------------| 
-| Hardware                                | Specification                  | ROS 2               | build                    |
-| [Nvidia Jetson Orin Nano Developer Kit](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetson-orin/) | Arm® Cortex®-A78AE v8.2 64-bit |        |              |
-| [Seeed Studio XIAO ESP32C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html) | RISC-V Dual-core 32-bit |    |
-| [Seeed Studio XIAO ESP32C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)|RISC-V single-core 32-bit     |  |  |
+| Parts                                | Specification-1                  | Specification-2                | note                    |
+| [Motor Driver: DRV8835](https://akizukidenshi.com/catalog/g/g109848/) | Two DC motors can be controlled    |   |
+| [Level Conversion : BSS138](https://akizukidenshi.com/catalog/g/g113837) | 5[V] 3.3[v] conversion |   |
 
-
-
-| Dealsense DCモータ**                       | 直流モータ（用途に応じたモータ選定）        |
-| HC-SR04超音波センサ**                      | 距離計測用の超音波センサ                    |
-| ユニバーサル基板**                         | モータドライバIC、DCモータ、超音波センサ、制御マイコンを搭載した基板 |
-| 安定化電源（Matsusada Precision製、12V出力）** | 12V出力の安定化電源                        |
 
 
 #### 2.2.2 ソフトウェア
