@@ -12,13 +12,16 @@
 本システムは以下の要素で構成される。
 
 #### 2.2.1 ハードウェア
-- **Nvidia Jetson Orin Nano Developer Kit**
-- **Seeed Studio XIAO ESP32C6**
-- **Seeed Studio XIAO ESP32C2**
-- **Dealsense DCモータ**
-- **HC-SR04超音波センサ**
-- **ユニバーサル基板**（モータドライバIC、DCモータ、超音波センサ、制御マイコン搭載）
-- **安定化電源**（Matsusada Precision製、12V出力）
+| ハードウェア                                 | 詳細                                       |
+|---------------------------------------------|------------------------------------------|
+| **Nvidia Jetson Orin Nano Developer Kit**    | 高性能なAI・ロボティクス向け開発ボード      |
+| **Seeed Studio XIAO ESP32C6**                | ESP32C6チップを搭載した小型マイコン        |
+| **Seeed Studio XIAO ESP32C2**                | ESP32C2チップを搭載した小型マイコン        |
+| **Dealsense DCモータ**                       | 直流モータ（用途に応じたモータ選定）        |
+| **HC-SR04超音波センサ**                      | 距離計測用の超音波センサ                    |
+| **ユニバーサル基板**                         | モータドライバIC、DCモータ、超音波センサ、制御マイコンを搭載した基板 |
+| **安定化電源（Matsusada Precision製、12V出力）** | 12V出力の安定化電源                        |
+
 
 #### 2.2.2 ソフトウェア
 - **ROS 2** (Ubuntu 22.04 LTS)
