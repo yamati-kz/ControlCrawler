@@ -16,8 +16,8 @@
 |-----------------------------------------|---------------------|---------------------|--------------------------| 
 | Hardware                                | Applications                  | ROS 2               | build                    |
 | [Nvidia Jetson Orin Nano Developer Kit](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetson-orin/)    |      |        |              |
-| [Seeed Studio XIAO ESP32C6](https://sigmdel.ca/michel/ha/xiao/xiao_esp32c6_intro_en.html)                |      |    |
-| [Seeed Studio XIAO ESP32C2](https://sigmdel.ca/michel/ha/xiao/xiao_esp32c3_intro_en.html)                |     |  |  |
+| [Seeed Studio XIAO ESP32C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html)                |      |    |
+| [Seeed Studio XIAO ESP32C2](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)                |     |  |  |
 
 
 
